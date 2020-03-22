@@ -5,6 +5,7 @@ import {RNCamera} from 'react-native-camera';
 import {WebView} from 'react-native-webview';
 import RNFS from 'react-native-fs';
 import axios from 'axios';
+import {Spinner} from 'native-base';
 
 export default function DetailScreen({navigation, route}) {
   const [data, setData] = useState(null);
@@ -86,7 +87,7 @@ export default function DetailScreen({navigation, route}) {
   };
 
   if (!data) {
-    return null;
+    return <Spinner />;
   }
 
   return (

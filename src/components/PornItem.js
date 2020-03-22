@@ -78,9 +78,6 @@ export default class PornItem extends React.PureComponent {
               </View>
             </View>
           </ImageBackground>
-          <View style={styles.footer}>
-            <Text style={styles.whiteText}>Keywords: {porn.keywords}</Text>
-          </View>
         </AppCard>
       </TouchableOpacity>
     );
